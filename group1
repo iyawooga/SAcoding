@@ -1,0 +1,47 @@
+# Name of code is Cal-Sa24
+# Basic Arithmetic calculator
+# Ask user if they want to use the calculator
+# If yes continue to perform required arithmetic
+q=input('Do you want to use the calculator?, (only numbers between 1 and 10 inclusive can be inputted)')
+while q == 'yes':
+    
+    Num1 = int(input('enter the first number'))
+    while Num1<1 or Num1>10:
+    # try again if number is not between 1 and 10  
+        Num1 = int(input('The number should be between 1 and 10, try again:'))
+        
+    Num2 = int(input('enter the second number'))
+    while Num2<1 or Num2>10:
+    #  try again if number is not between 1 and 10
+        Num2 = int(input('The number should be between 1 and 10, try again:'))
+        
+    Operation = input('what do you want to do (+, -, /, *)?') 
+    # List of possible operations and results
+    if Operation == '+':
+        
+        Result = Num1 + Num2
+    
+        
+    if Operation == '-':
+        
+        Result = Num1 - Num2
+
+    
+    if Operation == '/':
+        
+        Result = Num1 / Num2
+    
+    
+    if Operation == '*':
+        
+        Result = Num1 * Num2
+        
+    print(Result)   
+ 
+   # Ask user if they want to use calculator again
+   # if answer is not yes then print finished
+    q=input('Do you want to use the calculator again?')
+    if q!= 'yes':
+        print('finished')
+
+
