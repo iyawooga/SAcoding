@@ -1,0 +1,22 @@
+Use Functions:
+  look for repeated code, and turn it into a function instead (checking if the number is between 1 and 10)
+
+def newFunction(args):
+  do something with the args
+  return something to use in your code
+
+handle incorrect input from the user: when asked to enter a number, if they put in a word the program will crash
+optimise it: use elif instead of if when checking Operation
+
+what happens if the user doesnt enter a correct operation when asked?
+  (use if _input_ in [list of valid operations]: to fix that)
+
+no need to ask the user if they want to use the calculator when they start the program, its safe to assume they do, but if they say no, give some feedback (look at moving/changing line 44 & 45 to do this)
+
+
+
+
+
+
+
+where do you want to take this? what new features do you want to add, expanding it capabilies (handling more than just 10 different numbers), or using decimals too.
